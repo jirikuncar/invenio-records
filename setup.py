@@ -79,12 +79,13 @@ setup_requires = [
 
 install_requires = [
     'blinker>=1.4',
-    'flask-celeryext>=0.1.0',
+    'flask-celeryext>=0.2.2',
     'Flask>=0.11.1',
     'jsonpatch>=1.11',
     'jsonresolver>=0.1.0',
     'jsonref>=0.1',
     'jsonschema>=2.5.1',
+    'kombu>=3.0.37,<3.1',  # FIXME remove when Flask-CeleryExt is fixed
     'sqlalchemy-utils>=0.31.0',
 ]
 
